@@ -240,7 +240,7 @@ private fun KeyButton(
         style == KeyStyle.DIGIT -> colors.surfaceVariant
         style == KeyStyle.OPERATOR -> colors.primaryContainer
         style == KeyStyle.DESTRUCTIVE -> colors.errorContainer
-        else -> colors.surface
+        else -> colors.surfaceContainerHighest
     }
     val foreground = when {
         highlighted || style == KeyStyle.ACCENT -> colors.onPrimary
